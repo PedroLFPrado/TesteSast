@@ -1,5 +1,2 @@
-# Example 1 - Scan the current directory/repository
 Start-CodeScan -pfcond "medium"
-
-# Example 2 - Scan a remote GIT project
 Start-CodeScan -target "https://github.com/PedroLFPrado/TesteSas.git" -huntmethod "normal" -pfcond "medium"
