@@ -1,0 +1,12 @@
+syhunt_test:
+  stage: test
+  script:
+          - Start-CodeScan -pfcond 'fail-if:risk=mediumup' -output 'report.pdf' -outputex 'gl-sast-report.json'
+  artifacts:
+    reports:
+      sast: gl-sast-report.json  
+    paths:
+    - report.pdf 
+    when: on_failure
+  tags:
+   - syhunt
