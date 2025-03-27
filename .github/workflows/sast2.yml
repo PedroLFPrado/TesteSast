@@ -6,6 +6,6 @@ $MyProject = @{
   target = 'https://https://github.com/Precoma/AGP';
   branch = 'main';
   pfcond = 'medium';
-  output = 'report.pdf'
+  output = 'AGP\Relatórios\report.pdf'
 }
 Start-CodeScan @MyProject

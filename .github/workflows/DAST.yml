@@ -15,5 +15,5 @@ jobs:
         if: failure()
         with:
          name: syhunt-report
-         path: report.pdf
+         path: AGP/Relatórios/report.pdf
          if-no-files-found: error
