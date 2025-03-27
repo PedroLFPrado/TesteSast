@@ -1,0 +1,11 @@
+# SAST Example - Scan local directory/repository
+Start-CodeScan -pfcond "medium"
+
+# SAST Example - Scan a remote project repository
+$MyProject = @{
+  target = 'https://https://github.com/Precoma/AGP';
+  branch = 'main';
+  pfcond = 'medium';
+  output = 'report.pdf'
+}
+Start-CodeScan @MyProject

@@ -1,0 +1,11 @@
+# Example 1 - Scan the current directory/repository
+Start-CodeScan -pfcond "medium"
+
+# Example 2 - Scan a remote GIT project
+Start-CodeScan -target "https://github.com/someuser/somerepo.git" -huntmethod "normal" -pfcond "medium"
+
+# Example 2 - Scan a remote Azure DevOps Services project
+Start-CodeScan -target "https://dev.azure.com/user/projectname" -huntmethod "normal" -pfcond "medium"
+
+# Example 4 - Scan a specific local directory
+Start-CodeScan -target "C:\www\" -huntmethod "normal" -pfcond "medium"
